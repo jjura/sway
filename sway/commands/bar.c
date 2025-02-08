@@ -35,6 +35,7 @@ static const struct cmd_handler bar_handlers[] = {
 	{ "unbindcode", bar_cmd_unbindcode },
 	{ "unbindsym", bar_cmd_unbindsym },
 	{ "workspace_buttons", bar_cmd_workspace_buttons },
+	{ "workspace_gaps", bar_cmd_workspace_gaps },
 	{ "workspace_min_width", bar_cmd_workspace_min_width },
 	{ "wrap_scroll", bar_cmd_wrap_scroll },
 };

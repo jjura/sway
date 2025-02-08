@@ -1293,6 +1293,8 @@ json_object *ipc_json_describe_bar_config(struct bar_config *bar) {
 			json_object_new_boolean(bar->strip_workspace_numbers));
 	json_object_object_add(json, "strip_workspace_name",
 			json_object_new_boolean(bar->strip_workspace_name));
+	json_object_object_add(json, "workspace_gaps",
+			json_object_new_int(bar->workspace_gaps));
 	json_object_object_add(json, "workspace_min_width",
 			json_object_new_int(bar->workspace_min_width));
 	json_object_object_add(json, "binding_mode_indicator",

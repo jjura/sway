@@ -272,6 +272,12 @@ static bool ipc_parse_config(
 		config->workspace_buttons = json_object_get_boolean(workspace_buttons);
 	}
 
+	json_object *workspace_gaps =
+		json_object_object_get(bar_config, "workspace_gaps");
+	if (workspace_gaps) {
+		config->workspace_gaps = json_object_get_int(workspace_gaps);
+	}
+
 	json_object *workspace_min_width =
 		json_object_object_get(bar_config, "workspace_min_width");
 	if (workspace_min_width) {

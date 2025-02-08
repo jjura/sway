@@ -852,6 +852,9 @@ their value mean can be found in *sway-bar*(5):
 |- workspace_buttons
 :  boolean
 :  Whether to display the workspace buttons on the bar
+|- workspace_gaps
+:  integer
+:  Minimum width in px for the workspace buttons gaps on the bar
 |- workspace_min_width
 :  integer
 :  Minimum width in px for the workspace buttons on the bar

@@ -34,6 +34,7 @@ struct swaybar_config *init_config(void) {
 	config->binding_mode_indicator = true;
 	config->wrap_scroll = false;
 	config->workspace_buttons = true;
+	config->workspace_gaps = 0;
 	config->workspace_min_width = 0;
 	config->bindings = create_list();
 	wl_list_init(&config->outputs);

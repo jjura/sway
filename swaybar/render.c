@@ -446,7 +446,7 @@ static uint32_t predict_workspace_button_length(cairo_t *cairo,
 	if (width < config->workspace_min_width) {
 		width = config->workspace_min_width;
 	}
-	return width;
+	return width + config->workspace_gaps;
 }
 
 static uint32_t predict_workspace_buttons_length(cairo_t *cairo,
@@ -687,7 +687,7 @@ static uint32_t render_workspace_button(struct render_context *ctx,
 	hotspot->data = strdup(ws->name);
 	wl_list_insert(&output->hotspots, &hotspot->link);
 
-	*x += width;
+	*x += width + config->workspace_gaps;
 	return output->height;
 }
 
